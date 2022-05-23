@@ -42,4 +42,4 @@ class Neuron:
     def CalcActivation(self): # Function to calculate the activation
         self.activation = sigmoid(self.value + self.bias)
 
-def sigmoid(x: int) -> int: return 1 / (1 + exp(-x))
+def sigmoid(x: float) -> float: return 1 / (1 + exp(-x))
