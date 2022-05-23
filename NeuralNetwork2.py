@@ -6,7 +6,7 @@ class Network:
         self.startingLayer = startingLayer # Remember the number of first layer neurons
         for layerIndex, layer in enumerate(hiddenLayers): # Cycle through all layers
             self.layers.append([])
-            for neuron in layer:
+            for neuron in range(layer):
                 if layerIndex == 0: self.layers[layerIndex].append(Neuron(startingLayer))
                 else: self.layers[layerIndex].append(Neuron(hiddenLayers[layerIndex-1]))
 
