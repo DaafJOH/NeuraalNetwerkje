@@ -1,7 +1,7 @@
 from math import exp
 
 class Network:
-    def __init__(self, startingLayer: int, *hiddenLayers: int): # The function that run when the Network object is created
+    def __init__(self, startingLayer: int, *hiddenLayers: int):  # The function that run when the Network object is created
         self.layers = [] # Make a variable that contains a matrix of all the layers and neurons
         self.startingLayer = startingLayer # Remember the number of first layer neurons
         for layerIndex, layer in enumerate(hiddenLayers): # Cycle through all layers
