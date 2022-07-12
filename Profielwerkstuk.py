@@ -38,10 +38,9 @@ for k in range(1000):
 
     x2 = y1 * w2
     y2 = sigmoid(x2)
-
-    a = np.multiply(y2,(1-y2))
+    print(y2)
     # Backward
-    deltaN = np.multiply((y2-t), a)
+    deltaN = np.multiply((y2-t), np.multiply(y2,(1-y2)))
     deltan = np.multiply(deltaN, dsigmoid(x2))*w2.transpose()
     w2 = w2 - lr * (deltaN.transpose()*y1).transpose()
     w1 = w1 - lr * (i.transpose()*np.multiply(deltan, dsigmoid(x1)))

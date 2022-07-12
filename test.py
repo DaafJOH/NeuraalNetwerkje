@@ -1,12 +1,3 @@
-import numpy as np
-a = np.matrix([
-    [1, 2, 3],
-    [2, 3, 4]
-])
-b = np.matrix([
-    [7, 6],
-    [6, 5],
-    [5, 4],
-    [4, 3]
-])
-print(b*a)
+a = ["a", 8, "c", 6, "g", 4, 3, 2, 1, 0]
+for i in a:
+    print(i, a[i])
